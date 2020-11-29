@@ -16,3 +16,5 @@ or
 ```sh
 npm run sass
 ```
+## Normalize.css
+[Normalize.css](https://github.com/necolas/normalize.css/blob/master/normalize.css)

@@ -1,2 +1,28 @@
-body,header{width:100%;height:100%}body h1,header h1{font-size:22px;font-weight:bold}
+@charset "UTF-8";
+/* -- Add to Normalize.css -- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+header {
+  width: 100vw;
+  height: 100vh; }
+  header #bg-video {
+    /* ----- 背景用の動画ファイル ----- */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover; }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: #cac; }
+
 /*# sourceMappingURL=main.css.map */

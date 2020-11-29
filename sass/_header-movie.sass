@@ -1,0 +1,48 @@
+@mixin bg-video
+ /* ----- 背景用の動画ファイル ----- */
+ position: fixed
+ right: 0
+ bottom: 0
+ min-width: 100%
+ min-height: 100%
+ width: auto
+ height: auto
+ z-index: -100
+ //  background: url('poster.jpg') no-repeat
+ background-size: cover
+
+@mixin contents-on-video
+ /* ----- 背景の上に表示させたいコンテンツ ----- */
+ position: relative // 必ず必要
+ z-index: 2 // 必ず必要
+ display: flex
+ width: 50%
+ justify-content: center
+ align-items: center
+ text-align:center
+ margin: auto
+ 
+@mixin gradation-overlay
+ /* ----- グラデーションオーバーレイ ----- */
+ // 動画が粗くても、粗さが目立たなくなる
+ height: 100vh
+ background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6))
+
+// Html Code below.
+// <video id="bg-video" src="assets/kv-movie.mp4" poster="sample.png" controls autoplay loop></video>
+// *** 「動画ファイルを複数指定」は、割愛してる。More Info. => https://beginners-high.com/background-movie/
+
+// *******************
+// poster属性
+// 動画ファイルが利用できない環境で, 代替画像を指定。
+
+// controls属性
+// 動画再生・停止・ボリューム調整などのユーザーコントロールの表示・非表示を設定します。
+
+// autoplay属性
+// 動画ファイルが自動再生されます。動画背景に必須の属性です。
+
+// loop属性
+// 動画が繰り返し再生されます。こちらも動画背景の場合はよく使われます。
+// *******************
+
