@@ -5,7 +5,7 @@ Boilerplate for Scss
 ## Ruby
 ```sh
 gem install sass
-sass sass/main.scss:css/main.css --style compressed  d
+sass sass/main.scss:css/main.css --style compressed 
 ```
 or 
 ## Node.js
