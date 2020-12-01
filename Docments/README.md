@@ -18,3 +18,13 @@ npm run sass
 ```
 ## Normalize.css
 [Normalize.css](https://github.com/necolas/normalize.css/blob/master/normalize.css)
+
+
+
+
+    <!-- <div class="video-wrap">
+      <p>Brilliant Blue</p>
+      <video src="assets/movie.mp4" controls autoplay loop muted>
+        <img src="images/jewellery.jpg" alt="Placeholder">
+      </video>
+    </div> -->

@@ -1,14 +1,29 @@
 @import extend-normalize
 @import header-movie
+@import mouse-anime
 
 header 
   width: 100vw
   height: 100vh
-  // background: #ccc
-  #bg-video
-    @include bg-video
+  // 画像が荒い場合, シマシマを敷く。
+  // .overlay-yokojima
+  //   @include overlay-yokojima
+  .wrap
+    // position: relative
+    #bg-video
+      @include bg-video
+    .contents-on-video
+      @include contents-on-video
+      @include mouse-anime-4(12px, 4px, 43px, 2px)
+      a.mouse-scroll
+        position: absolute
+        bottom: 18px
+        height: 60px
+        
 
 section
   width: 100vw
   height: 100vh
-  background: #cac
+  text-align: center
+  vertical-align: center
+  // background: #cac

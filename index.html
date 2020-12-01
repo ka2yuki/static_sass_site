@@ -9,7 +9,27 @@
 </head>
 <body>
   <header>
-    <video id="bg-video" src="assets/kv-movie.mp4" poster="sample.png" controls autoplay loop></video>
+    <div class="overlay-yokojima"></div>
+    <!-- 動画背景 -->
+    <div class="wrap">
+      <!-- 背景用の動画ファイル -->
+      <video id="bg-video" src="assets/kv-movie.mp4" poster="poster.jpg" autoplay ></video>
+      <!-- 背景の上に表示させたいコンテンツ -->
+      <div class="contents-on-video">
+        <div class="header-content-base">
+          <h1><img id="header-logo" src="assets/img/logo.png" alt="ハタオリマチ商店街"></h1>
+          <div class="center-content">
+            <img src="assets/img/kv.png" alt="ハタオリマチ商店街 in 山梨県富士山">
+          </div>
+          <!-- Mouse-Animation  -->
+          <div class="">
+            <a href="#" class='mouse-scroll'><span></span><span></span><p>スクロール</p></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </header>
   <section>1</section>
   <section>2</section>
