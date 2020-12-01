@@ -12,9 +12,11 @@ header
     // position: relative
     #bg-video
       @include bg-video
+    // Content
     .contents-on-video
       @include contents-on-video
       @include mouse-anime-4(12px, 4px, 43px, 2px)
+      // padding: 2rem 1rem
       a.mouse-scroll
         position: absolute
         bottom: 18px
@@ -31,5 +33,15 @@ section
 footer
   padding-top: 3rem
   padding-bottom: 3rem
-  p
-    margin-bottom: .25rem
+  background: url("../assets/img/footer-bg.png")
+  background-size: cover
+  .container
+    p
+      margin-bottom: .25rem
+    .footer-log-img
+      width: 190px
+    .footer-content
+      padding: .1rem 1rem
+  .bk-top
+    margin: auto 1.5rem
+

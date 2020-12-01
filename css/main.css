@@ -37,7 +37,8 @@ header {
       height: 100%;
       width: 96%; }
       header .wrap .contents-on-video .header-content-base h1 {
-        position: absolute; }
+        position: absolute;
+        padding: 2rem 1rem; }
         header .wrap .contents-on-video .header-content-base h1 img {
           width: 92px; }
       header .wrap .contents-on-video .header-content-base .center-content {
@@ -104,8 +105,16 @@ section {
 
 footer {
   padding-top: 3rem;
-  padding-bottom: 3rem; }
-  footer p {
+  padding-bottom: 3rem;
+  background: url("../assets/img/footer-bg.png");
+  background-size: cover; }
+  footer .container p {
     margin-bottom: 0.25rem; }
+  footer .container .footer-log-img {
+    width: 190px; }
+  footer .container .footer-content {
+    padding: 0.1rem 1rem; }
+  footer .bk-top {
+    margin: auto 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
