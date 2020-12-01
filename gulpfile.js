@@ -2,6 +2,8 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer"); // Auto Vender pri (-webkit-..
+var sourcemaps = require("gulp-sourcemaps"); // errorわかりやすく
 
 sass.compiler = require("node-sass");
 
@@ -12,6 +14,9 @@ gulp.task("sass", function () {
     .pipe(gulp.dest("./css"));
 });
 
-gulp.task("sass:watch", function () {
+gulp.task("watch", function () {
   gulp.watch("./sass/**/*.scss", ["sass"]);
 });
+
+// タスク"task-watch"がgulpと入力しただけでdefaultで実行されるようになる
+gulp.task("default", ["watch"]);
