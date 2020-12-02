@@ -1,8 +1,14 @@
 @import extend-normalize
+@import v
 @import header-movie
 @import mouse-anime
 @import button
 @import extend-bts
+
+// .pac
+//   @include position-ab-center
+body
+  background: #ECECEC
 
 header 
   width: 100vw
@@ -27,33 +33,243 @@ header
 main
   .container
     .row
-      .col-md-12
+      .lead-section
+        .lead-1, .lead-2, .lead-3, .lead-4,
+        .lead-5,
+        .lead-6,
+        .lead-7,
+        .lead-8,
+        .lead-9,
+        // .lead-10,
+        .lead-11,
+        .lead-12,
+        .lead-13,
+        .lead-14,
+        .lead-15,
+        .lead-16,
+        .lead-17,
+        .lead-18,
+        .lead-19,
+        .lead-20,
+        .lead-21,
+        .lead-22,
+          position: absolute
+          width: 6rem
+        .lead-1
+          // large right top
+          top: .3rem
+          right: 6rem
+          width: 5rem
+        .lead-2
+          // l left-r
+          bottom: -1.5rem
+          left: 6.2rem
+          width: 5rem
+        .lead-3
+          top: .1rem
+          left: 6rem
+          width: 1.8rem
+        .lead-4
+          // smal left
+          bottom: -.3rem
+          left: 12rem
+          width: 1.5rem
+        .lead-5
+          // smal right
+          bottom: .2rem
+          right: 6.2rem
+          width: 2.5rem
+        .lead-6
+          // l left-l
+          bottom: -.5rem
+          left: 1.5rem
+          width: 4.4rem
+        .lead-7
+          // large right top
+          top: .1rem
+          right: 1rem
+          width: 5rem
+        .lead-8
+          top: 3.4rem
+          left: 1.3rem
+          width: 1.5rem
+        .lead-9
+          // smal right btm 
+          bottom: 2.8rem
+          right: 2.6rem
+          width: 1.8rem
+        .lead-10
+          bottom: 3rem
+          left: 8rem
+          width: 1.5rem
+        .lead-11
+          // large right-middle
+          bottom: 5.5rem
+          right: .4rem
+          width: 3.4rem
+        .lead-12
+          // large left top
+          top: -1.3rem
+          left: 8.6rem
+          width: 4rem
+        .lead-13
+          // large left-middle
+          top: 6rem
+          left: -.1rem
+          width: 4.1rem
+        .lead-14
+          // large right-buttom
+          bottom: -2.1rem
+          right: 9.3rem
+          width: 4.4rem
+        .lead-15
+          // Twist right 
+          bottom: -0.6rem
+          left: 13.8rem
+          width: 2.9rem
+        .lead-16
+          // Twist left-l 
+          bottom: 5.1rem
+          left: 0.1rem
+          width: 2.9rem
+        .lead-17
+          // Twist top -l 
+          top: 4.9rem
+          right: -0.2rem
+          width: 3rem
+        .lead-18
+          // Twist btm -l 
+          bottom: 1.2rem
+          right: 3rem
+          width: 3rem
+        .lead-19
+          // Twist btm -l 
+          top: 6.7rem
+          right: 0.3rem
+          width: 3rem
+        .lead-20
+          // Twist top left center
+          top: -1.5rem
+          left: 12.2rem
+          width: 3.9rem
+        .lead-21
+          // Twist top  center
+          top: .7rem
+          left: 2.8rem
+          width: 2.9rem
+        .lead-22
+          // Twist top right center
+          top: -1rem
+          right: 11.4rem
+          width: 2.9rem
+    .col-md-12.main-article
+        max-width: 750px
+        margin-left: auto
+        margin-right: auto
+    .col-md-12
         .card-style-cricle-l
+          // 左: サムネ
           .card-left
             display: flex
             justify-content: center
             align-items: center
-            svg
-              width: 250px
-              height: 250px
+            width: 100%
+            height: 100%
+            position: relative
+            overflow: hidden
+            video, img:first-child
+              width: 160%
+              height: 100%
+              position: absolute
+              top: 0
+            img:first-child
+              width: 100%
+            .video-cover
+              width: 100%
+              height: 100%
+              z-index: 2
           .card-right
-            .button-group
-            .btn-field
-              a.button
-                @include button
+            .card-body
+              padding: 1.25rem 2.5rem
+              .card-body-content
+                width: 53%
+                margin-bottom: 1.5rem
+                position: relative
+                >img
+                  // thumb Twist 3
+                  position: absolute
+                  width: 4rem
+                  right: -2rem
+                  top: -1.8rem
+                >.card-title
+                  margin-bottom: 0
+                  >img
+                    max-height: 30px !important
+                    width: auto !important
+                .card-text:last-child
+                  text-align: right
+                  font-size: 1px
+              .button-group
+                .btn-field
+                  a.button
+                    @include img-button(44px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: .1rem
         .card-style-cricle-r
+          // みぎにサムネ
           .card-left
-            .button-group
-            .btn-field
-              a.button
-                @include button
+            .card-body
+              padding: 1.25rem 2.5rem
+              .card-body-content
+                width: 53%
+                margin-bottom: 1.5rem
+                position: relative
+                .duble-twist
+                  >img
+                    position: absolute
+                    width: 4rem
+                    top: -1.8rem
+                    &:first-child
+                      right: -5rem
+                    &:last-child
+                      right: -2rem
+                >.card-title
+                  margin-bottom: 0
+                  >img
+                    max-height: 30px !important
+                    width: auto !important
+                .card-text:last-child
+                  text-align: right
+                  font-size: 1px
+              .button-group
+                .btn-field
+                  a.button
+                    @include img-button(44px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: .1rem
           .card-right
             display: flex
             justify-content: center
             align-items: center
-            svg
-              width: 250px
-              height: 250px
+            width: 100%
+            height: 100%
+            position: relative
+            overflow: hidden
+            video, img:first-child
+              width: 160%
+              height: 100%
+              position: absolute
+              top: 0
+            img:first-child
+              width: 100
+            .video-cover
+              width: 100%
+              height: 100%
+              z-index: 2
 
 
 
