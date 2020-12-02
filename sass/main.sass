@@ -28,18 +28,33 @@ main
   .container
     .row
       .col-md-12
-        .card-left
-          display: flex
-          justify-content: center
-          align-items: center
-          svg
-            width: 250px
-            height: 250px
-        .card-right
-          .button-group
-          .btn-field
-            a.button
-              @include button
+        .card-style-cricle-l
+          .card-left
+            display: flex
+            justify-content: center
+            align-items: center
+            svg
+              width: 250px
+              height: 250px
+          .card-right
+            .button-group
+            .btn-field
+              a.button
+                @include button
+        .card-style-cricle-r
+          .card-left
+            .button-group
+            .btn-field
+              a.button
+                @include button
+          .card-right
+            display: flex
+            justify-content: center
+            align-items: center
+            svg
+              width: 250px
+              height: 250px
+
 
 
 section

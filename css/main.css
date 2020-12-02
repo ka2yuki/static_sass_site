@@ -100,14 +100,14 @@ header {
       bottom: 18px;
       height: 60px; }
 
-main .container .row .col-md-12 .card-left {
+main .container .row .col-md-12 .card-style-cricle-l .card-left {
   display: flex;
   justify-content: center;
   align-items: center; }
-  main .container .row .col-md-12 .card-left svg {
+  main .container .row .col-md-12 .card-style-cricle-l .card-left svg {
     width: 250px;
     height: 250px; }
-main .container .row .col-md-12 .card-right .btn-field a.button {
+main .container .row .col-md-12 .card-style-cricle-l .card-right .btn-field a.button {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -118,7 +118,7 @@ main .container .row .col-md-12 .card-right .btn-field a.button {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s; }
-  main .container .row .col-md-12 .card-right .btn-field a.button::after {
+  main .container .row .col-md-12 .card-style-cricle-l .card-right .btn-field a.button::after {
     position: absolute;
     top: 50%;
     right: 0.2em;
@@ -129,11 +129,45 @@ main .container .row .col-md-12 .card-right .btn-field a.button {
     border-bottom-width: 5px;
     border-left-color: #fff;
     transition: all 0.3s; }
-  main .container .row .col-md-12 .card-right .btn-field a.button:hover {
+  main .container .row .col-md-12 .card-style-cricle-l .card-right .btn-field a.button:hover {
     background-color: #fff;
     color: #333; }
-  main .container .row .col-md-12 .card-right .btn-field a.button:hover::after {
+  main .container .row .col-md-12 .card-style-cricle-l .card-right .btn-field a.button:hover::after {
     border-left-color: #333; }
+main .container .row .col-md-12 .card-style-cricle-r .card-left .btn-field a.button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0.9em 0em;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s; }
+  main .container .row .col-md-12 .card-style-cricle-r .card-left .btn-field a.button::after {
+    position: absolute;
+    top: 50%;
+    right: 0.2em;
+    content: "";
+    margin-top: -5px;
+    border: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: #fff;
+    transition: all 0.3s; }
+  main .container .row .col-md-12 .card-style-cricle-r .card-left .btn-field a.button:hover {
+    background-color: #fff;
+    color: #333; }
+  main .container .row .col-md-12 .card-style-cricle-r .card-left .btn-field a.button:hover::after {
+    border-left-color: #333; }
+main .container .row .col-md-12 .card-style-cricle-r .card-right {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .container .row .col-md-12 .card-style-cricle-r .card-right svg {
+    width: 250px;
+    height: 250px; }
 
 section {
   width: 100vw;
