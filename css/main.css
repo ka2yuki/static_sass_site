@@ -5,6 +5,9 @@
 *::after {
   box-sizing: border-box; }
 
+.row + .row {
+  margin-top: 1rem; }
+
 header {
   width: 100vw;
   height: 100vh; }
@@ -96,6 +99,41 @@ header {
       position: absolute;
       bottom: 18px;
       height: 60px; }
+
+main .container .row .col-md-12 .card-left {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .container .row .col-md-12 .card-left svg {
+    width: 250px;
+    height: 250px; }
+main .container .row .col-md-12 .card-right .btn-field a.button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0.9em 0em;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s; }
+  main .container .row .col-md-12 .card-right .btn-field a.button::after {
+    position: absolute;
+    top: 50%;
+    right: 0.2em;
+    content: "";
+    margin-top: -5px;
+    border: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: #fff;
+    transition: all 0.3s; }
+  main .container .row .col-md-12 .card-right .btn-field a.button:hover {
+    background-color: #fff;
+    color: #333; }
+  main .container .row .col-md-12 .card-right .btn-field a.button:hover::after {
+    border-left-color: #333; }
 
 section {
   width: 100vw;

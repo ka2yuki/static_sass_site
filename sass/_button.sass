@@ -1,0 +1,27 @@
+@mixin button
+  position: relative
+  display: inline-block
+  width: 100%
+  padding: .9em 0em
+  background-color: #333
+  border: 2px solid #333
+  color: #fff
+  text-align: center
+  text-decoration: none
+  transition: all .3s
+  &::after
+    position: absolute
+    top: 50%
+    right: .2em
+    content: ''
+    margin-top: -5px
+    border: 7px solid transparent
+    border-top-width: 5px
+    border-bottom-width: 5px
+    border-left-color: #fff
+    transition: all .3s
+  &:hover
+    background-color: #fff
+    color: #333
+  &:hover::after
+    border-left-color: #333

@@ -1,6 +1,8 @@
 @import extend-normalize
 @import header-movie
 @import mouse-anime
+@import button
+@import extend-bts
 
 header 
   width: 100vw
@@ -21,6 +23,23 @@ header
         position: absolute
         bottom: 18px
         height: 60px
+
+main
+  .container
+    .row
+      .col-md-12
+        .card-left
+          display: flex
+          justify-content: center
+          align-items: center
+          svg
+            width: 250px
+            height: 250px
+        .card-right
+          .button-group
+          .btn-field
+            a.button
+              @include button
 
 
 section
