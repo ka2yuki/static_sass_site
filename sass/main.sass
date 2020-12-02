@@ -168,6 +168,7 @@ main
         margin-right: auto
     .col-md-12
         .card-style-cricle-l
+          // 左: サムネ
           .card-left
             display: flex
             justify-content: center
@@ -176,11 +177,13 @@ main
             height: 100%
             position: relative
             overflow: hidden
-            video
+            video, img:first-child
               width: 160%
               height: 100%
               position: absolute
               top: 0
+            img:first-child
+              width: 100%
             .video-cover
               width: 100%
               height: 100%
@@ -193,12 +196,16 @@ main
                 margin-bottom: 1.5rem
                 position: relative
                 >img
+                  // thumb Twist 3
                   position: absolute
                   width: 4rem
                   right: -2rem
                   top: -1.8rem
-                .card-title
+                >.card-title
                   margin-bottom: 0
+                  >img
+                    max-height: 30px !important
+                    width: auto !important
                 .card-text:last-child
                   text-align: right
                   font-size: 1px
@@ -211,6 +218,7 @@ main
                     align-items: center
                     font-size: .1rem
         .card-style-cricle-r
+          // みぎにサムネ
           .card-left
             .card-body
               padding: 1.25rem 2.5rem
@@ -227,8 +235,11 @@ main
                       right: -5rem
                     &:last-child
                       right: -2rem
-                .card-title
+                >.card-title
                   margin-bottom: 0
+                  >img
+                    max-height: 30px !important
+                    width: auto !important
                 .card-text:last-child
                   text-align: right
                   font-size: 1px
@@ -248,11 +259,13 @@ main
             height: 100%
             position: relative
             overflow: hidden
-            video
+            video, img:first-child
               width: 160%
               height: 100%
               position: absolute
               top: 0
+            img:first-child
+              width: 100
             .video-cover
               width: 100%
               height: 100%
