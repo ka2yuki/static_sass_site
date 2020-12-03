@@ -5,6 +5,12 @@
 @import button
 @import extend-bts
 
+// ALL
+a
+  color: white
+  &:hover
+    color: #eee !important
+    text-decoration: none
 // .pac
 //   @include position-ab-center
 body
@@ -272,7 +278,6 @@ main
               z-index: 2
 
 
-
 section
   width: 100vw
   height: 100vh
@@ -286,12 +291,29 @@ footer
   background: url("../assets/img/footer-bg.png")
   background-size: cover
   .container
-    p
-      margin-bottom: .25rem
-    .footer-log-img
-      width: 190px
+    max-width: 60%
+    color: white
+    // p
+    //   margin-bottom: .25rem
+    .navbar
+      img.footer-log-img
+        width: 190px
+      #navbarNav
+        ul.navbar-nav
+          width: 100%
+          li.nav-item
+            width: 30%
+            text-align: center
+            a
+              color: white
     .footer-content
+      font-size: .6rem
       padding: .1rem 1rem
+      ul
+        margin: 0
+        padding: 0
+        li
+          list-style: none
   .bk-top
     margin: auto 1.5rem
 
