@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <?php 
-      
-    ?>
       <!-- 大枠 -->
       <div class="is-flex">
         <!-- 左の細いMenu -->
@@ -25,7 +22,7 @@
             include_once 'components/footer.php';
           ?>
         </div>
-        <!-- end Main Contents -->
+        <!-- End Main Contents -->
       </div>
     </div>
   </body>
