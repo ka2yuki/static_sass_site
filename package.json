@@ -1,9 +1,16 @@
 {
   "scripts": {
-    "sass": "gulp sass"
+    "sass": "gulp sass",
+    "css-build": "node-sass --omit-source-map-url sass/main.scss css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.2"
   }
 }

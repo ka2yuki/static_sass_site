@@ -1,0 +1,15 @@
+@import "./utilities.scss";
+.v-height {
+  height: 100vh;
+}
+
+.in-box {
+  // @extend .content-center;
+  margin: 2rem;
+  background: #ccc !important;
+  height: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

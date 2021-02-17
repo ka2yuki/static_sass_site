@@ -1,0 +1,66 @@
+@import "bulma/bulma.scss";
+@import "grid.scss";
+
+// Left
+.layout-left {
+  width: 3%;
+}
+
+// Right
+.layout-right {
+  width: 97%;
+  .main-image {
+    width: 80%;
+  }
+  .news-area {
+    width: 20%;
+    color: white;
+    background: #000000ed !important;
+    > div:not(:last-child) {
+      border-bottom: 1px solid white;
+    }
+    .news-header {
+      height: 11%;
+      background: #757763;
+    }
+    .news-post {
+      height: 26%;
+      .news-text,
+      .news-body {
+        height: 50%;
+      }
+      .news-text {
+        font-weight: bold;
+      }
+      .news-body {
+        .news-category {
+          border-radius: 50%;
+        }
+        .news-date {
+          font-weight: bold;
+        }
+      }
+    }
+    .news-footer {
+      height: 11%;
+      background: #fa7c91;
+    }
+  }
+  .area-item-list {
+    .item-list-header {
+      height: 15%;
+    }
+    .item-list-main {
+      height: 70%;
+      background: #277927;
+    }
+    .item-list-footer {
+      height: 15%;
+      img {
+        width: 350px;
+      }
+    }
+  }
+}
+
+// @extend .grid-area;
