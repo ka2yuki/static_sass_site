@@ -1,0 +1,47 @@
+/**
+ * Center of POSITION.
+ * ===================
+ * 親クラス名に、「__box」 を付与したクラス名が作られる。
+ * ===================
+ * $w: width
+ * $direction: row, column, margin
+ **/
+@mixin center-position($w: 40%, $direction: row, $margin: 0 auto) {
+  &__box {
+    width: $w;
+    margin: $margin;
+
+    display: flex;
+    flex-direction: $direction;
+    // background: rebeccapurple;
+
+    // 影響範囲が強い為、米アウト。!impotant が必要になる。
+    // > img {
+    //   width: 100%;
+    //   height: 100%;
+    // }
+  }
+}
+
+/**
+ * 画像の上に、画像/文字 を敷く
+ * ===================
+ * 小物(p や imgなど) が 増えた際も、柔軟に対応できる様にしたい。
+ * - @if @each $変数 などを 使い。
+ * ===================
+ **/
+@mixin parent() {
+  position: relative;
+  // 載せる タグを指定する。p, img, div..
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0; /*余計な隙間を除く*/
+    padding: 0; /*余計な隙間を除く*/
+    font-size: 60px; /*サイズ*/
+  }
+}

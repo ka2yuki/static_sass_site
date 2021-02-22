@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-// Import a Google Font
-// @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-@import "./fonts.scss";
-
 // Set your brand colors
 $purple: #8a4d76;
 $pink: #fa7c91;
@@ -40,8 +36,3 @@ $input-shadow: none;
 // @import "../../node_modules/bulma/sass/layout/section.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
-
-// my custom
-@import "./code-hightlight.scss";
-@import "./custom.scss";
-@import "./utilities.scss";

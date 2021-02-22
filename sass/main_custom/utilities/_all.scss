@@ -1,0 +1,74 @@
+// Centering in CSS
+// https://web.dev/centering-in-css/
+@import "variables";
+@import "mixins";
+
+// ===============================================
+/*
+  My Custom Usefull CLASS. below.
+*/
+// ===============================================
+
+// 縦・横：中央
+.content-center {
+  display: grid;
+  place-content: center;
+  gap: 1ch;
+}
+.content-center2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+}
+
+// ===============================================
+// 参照元：https://lpeg.info/html/css_bubble.html
+// Mixin
+// https://hyper-text.org/archives/2014/04/css_triangle_tips.shtml
+// ===============================================
+
+// 三角共通 : 擬似を付ける本体。
+.sankaku-left,
+.sankaku-right {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 17px 10px;
+  width: 100%;
+  font-size: 16px;
+  // background: #3dbc1a;
+}
+// 三角 ◀︎ even. ：擬似要素に三角
+.sankaku-left {
+  &:nth-child(even),
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-top: -15px;
+    margin-left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid #3dbc1a;
+    z-index: 999;
+    width: 50px;
+  }
+}
+// 三角 ▶︎ odd.
+.sankaku-right {
+  &:nth-child(2n + 1),
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    margin-left: 0px;
+    border: 15px solid transparent;
+    border-left: 15px solid #781abc;
+    z-index: 999;
+    width: 50px;
+  }
+}

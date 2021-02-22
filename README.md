@@ -1,15 +1,23 @@
 # ボイラープレート：静的サイトver
-# ステップ
+# 流れ
 1. 完成したらコピーする
 2. コピーした物を提出する。
    1. その際は、不要な物は全て削除する。
    2. 削除の為の`Shell`を作るのもあり。
 
 # 技術
-- Scss
-- CSSライブラリ：[bluma.io](https://bulma.io/documentation/elements/button/)
-  - 軽量
-  - 今回のデザインのボタンが、既にある。
+- 記法
+  - SCSS
+  - 設計
+    - [BEM](https://en.bem.info/methodology/) | official
+    - posts
+      - [なぜBEMが必要なのか](https://www.codegrid.net/articles/bem-basic-1/)
+        - 禁忌とされる`!important`の多用を誘発する
+        - etc
+- ライブラリ
+  - [bluma.io](https://bulma.io/documentation/elements/button/)
+    - ❌軽量❌：それ程変わらない。GitHubを比較。
+    - 今回の `ボタンDESIGN` が、既にある。
 
 # 使い方
 ## Ruby
@@ -28,12 +36,14 @@ or
 npm run sass
 ```
 # CSSフレームワーク
-1. [bluma.io](https://bulma.io/documentation/elements/button/)
-   1. ボタンの装飾が少なくてすむ。
-   2. 軽量CSSのみ。
-   3. モーダルはあるが、閉じる動作は、自作する必要がある。
-2. [bootstrap](https://getbootstrap.com/docs/5.0/components/buttons/)
+1. [bootstrap](https://getbootstrap.com/docs/5.0/components/buttons/)
    1. 慣れてる。
+   2. それほど重くない。
+   3. デザインも`v5.0`から🍠イモ感がなくなっている。
+2. [bluma.io](https://bulma.io/documentation/elements/button/)
+   1. 👍: ボタンの装飾が少なくてすむ。
+   2. 👎: それほど軽量CSSのみ。
+   3. 👎: モーダルはあるが、閉じる動作は、自作する必要がある。
 3. [Normalize.css](https://materializecss.com/buttons.html)
    1. ボタンにエフェクトがある。
 

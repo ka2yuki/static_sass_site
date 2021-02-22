@@ -1,0 +1,21 @@
+.post-list {
+  width: 90%;
+  margin: 23px auto;
+  h1 {
+    font-size: 43px;
+    line-height: 1;
+  }
+  .tiles {
+    padding: 7px 12px;
+    position: relative;
+    .arrow {
+      position: absolute;
+      right: 14px;
+      top: 43%;
+      width: 15px;
+    }
+    &__box {
+      border-bottom: 1px solid #ccccccd9;
+    }
+  }
+}

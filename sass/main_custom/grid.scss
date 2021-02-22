@@ -1,0 +1,11 @@
+@mixin grid-area {
+  .grid-area {
+    margin: 0 !important;
+    height: 25%;
+    .sankaku-left,
+    .sankaku-right {
+      display: flex;
+      height: 105%;
+    }
+  }
+}

@@ -1,64 +1,187 @@
 @import "bulma/bulma.scss";
-@import "grid.scss";
+@import "./main_custom/main-custom.scss";
 
-// Left
+// LEFT
+// 黒のメニュー @左端エリア
 .layout-left {
-  width: 3%;
+  width: 4%;
+  background: black !important;
+  text-align: center;
+  border-right: 1px solid white;
+  @include center-position(30%, column, 15px auto 0 26%);
+  img {
+    margin-bottom: 120px;
+    &:nth-child(2) {
+      width: 80%;
+    }
+    &:last-child {
+      width: 70%;
+    }
+  }
 }
 
-// Right
+// RIGHT
 .layout-right {
   width: 97%;
-  .main-image {
-    width: 80%;
-  }
-  .news-area {
-    width: 20%;
-    color: white;
-    background: #000000ed !important;
-    > div:not(:last-child) {
-      border-bottom: 1px solid white;
-    }
-    .news-header {
-      height: 11%;
-      background: #757763;
-    }
-    .news-post {
-      height: 26%;
-      .news-text,
-      .news-body {
-        height: 50%;
-      }
-      .news-text {
-        font-weight: bold;
-      }
-      .news-body {
-        .news-category {
-          border-radius: 50%;
+  background: url("/assets/img/bg-1.png") repeat-y #000000f0;
+  background-size: contain;
+  &__main {
+    border: 1px solid white;
+    // left
+    .main-box {
+      width: 80%;
+      padding: 12px;
+      @include parent();
+      > img {
+        width: 93%;
+        margin: 0 auto;
+        &:first-child {
+          position: absolute;
+          width: 50%;
+          top: 34%;
+          left: 35%;
+          -ms-transform: translate(-20%, -50%);
+          -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+          margin: 0; /*余計な隙間を除く*/
+          padding: 0; /*余計な隙間を除く*/
+          font-size: 60px; /*サイズ*/
         }
-        .news-date {
+      }
+      // Button Box.
+      div.parent {
+        position: absolute;
+        bottom: 4px;
+        left: 38.3%;
+        width: 39.7%;
+        height: 31.3%;
+        /* background: #00098b; */
+        -ms-transform: translate(-20%, -50%);
+        -webkit-transform: translate(-20%, -50%);
+        transform: translate(-20%, -50%);
+        margin: 0; /*余計な隙間を除く*/
+        padding: 15px 12px 0;
+        img {
+          &:nth-child(3) {
+            padding-top: 8px;
+          }
+        }
+      }
+    }
+    // right
+    .news-area {
+      $width-padding: 20px;
+      width: 20%;
+      color: white;
+      border-left: 1px solid white;
+      // background: #000000ed !important;
+      > div:not(:last-child) {
+        border-bottom: 1px solid white;
+      }
+      .news-header {
+        height: 10%;
+        padding: 18px $width-padding 0px;
+        h2 {
+          line-height: 0.7;
+          font-size: 49px;
           font-weight: bold;
         }
       }
-    }
-    .news-footer {
-      height: 11%;
-      background: #fa7c91;
+      .news-post {
+        height: 27.7%;
+        padding: 18px $width-padding 2px;
+        // .news-text,
+        // .news-body {
+        //   // height: 50%;
+        // }
+        .news-text {
+          font-weight: bold;
+          line-height: 1.5;
+          font-size: 13px;
+          height: 63%;
+          /* background: darkblue; */
+        }
+        .news-body {
+          .news-category {
+            border-radius: 30px;
+            border: 1px solid;
+            /* background: darkblue; */
+            width: 65px;
+            font-size: 3px;
+            font-weight: bold;
+            padding: 2px 0;
+            text-align: center;
+          }
+          .news-date {
+            font-weight: bold;
+            float: right;
+            margin-top: 8px;
+            font-size: 13px;
+          }
+        }
+      }
+      .news-footer {
+        // height: 11%;
+        // background: #fa7c91;
+      }
     }
   }
+
+  // 【 買取アイテムリスト一覧 】
   .area-item-list {
     .item-list-header {
       height: 15%;
+      border-bottom: 1px solid white;
+      display: flex;
+      align-items: center;
+      h2 {
+        color: white;
+        font-size: 75px;
+        font-weight: bold;
+        margin-left: 35px;
+      }
     }
     .item-list-main {
-      height: 70%;
-      background: #277927;
+      height: 68%;
+      @include grid-area;
+      // background: #277927;
     }
     .item-list-footer {
-      height: 15%;
+      height: 17%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
       img {
-        width: 350px;
+        width: 270px;
       }
+    }
+  }
+
+  // area-kaitori-group
+  .area-kaitori-group {
+    color: $font-c;
+    .left-section {
+      @extend .post-list;
+    }
+    .right-section {
+      border-left: 1px solid;
+      @include details-info;
+    }
+  }
+
+  footer {
+    background: black;
+    border-top: 1px solid white;
+    text-align: center;
+    position: relative;
+    > img:first-child {
+      margin: 40px auto;
+      width: 13%;
+    }
+    > img:last-child {
+      position: absolute;
+      right: 20px;
+      bottom: 7%;
+      width: 53px;
     }
   }
 }

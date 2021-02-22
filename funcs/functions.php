@@ -20,6 +20,7 @@ function odd(int $n): bool {
       return true;
     }
 }
+
 /**
  * @return 奇数の際、左,
  * @return 偶数の際、右,
@@ -27,7 +28,8 @@ function odd(int $n): bool {
 function odd_is_left_sankaku(int $n): string { 
   return (odd($n) ? "left" : "right");
 }
-/** 
+/**
+ * 奇数 か 判断し、 Class Name を返す。 
  * 参考演算 ex.
  * echo (odd($i) ? 'odd' : 'even')
  */ 

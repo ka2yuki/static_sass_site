@@ -1,0 +1,24 @@
+/*
+* プロジェクトのベースとなる、
+*  - 色、
+* など決める。
+*/
+$font-c: white;
+
+.v-height {
+  height: 100vh;
+}
+.v-width {
+  width: 100vw;
+}
+
+.in-box {
+  // @extend .content-center;
+  // margin: 2rem;
+  // background: #ccc !important;
+  // height: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
